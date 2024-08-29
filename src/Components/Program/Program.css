@@ -1,0 +1,156 @@
+.program-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 20px;
+}
+
+.title {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 50px;
+}
+
+.title p {
+    margin: 0;
+    font-size: 20px;
+}
+
+.title h3 {
+    margin-top: 10px;
+    font-size: 24px;
+}
+
+.graduations {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    margin-top: 20px;
+
+}
+
+.graduations .grad_One,
+.graduations .grad_two,
+.graduations .grad_three {
+    position: relative;
+    text-align: center;
+}
+
+.graduations .grad_One .picturs,
+.graduations .grad_two .picturs,
+.graduations .grad_three .picturs {
+    width: 400px;
+    height: 400px;
+    transition: opacity 0.3s ease;
+    margin-bottom: 10px;
+    border-radius: 10px;
+}
+
+.graduations .grad_One .Icon,
+.graduations .grad_two .Icon,
+.graduations .grad_three .Icon {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%) scale(0); /* Start scaled down to hide initially */
+    transition: transform 0.3s ease; /* Transition for sliding effect */
+    width: 40px; /* Adjust size as needed */
+    height: 40px; /* Adjust size as needed */
+    z-index: 1; /* Ensure the icon is above the image */
+}
+
+.graduations .grad_One:hover .Icon,
+.graduations .grad_two:hover .Icon,
+.graduations .grad_three:hover .Icon {
+    transform: translate(-50%, -50%) scale(1); /* Scale to original size on hover */
+}
+
+.graduations .grad_One:hover .picturs,
+.graduations .grad_two:hover .picturs,
+.graduations .grad_three:hover .picturs {
+    opacity: 0.5; /* Adjust opacity to highlight image */
+}
+
+.graduations .grad_One:hover,
+.graduations .grad_two:hover ,
+.graduations .grad_three:hover {
+    background-color: #000f984d;
+
+}
+
+.graduations .grad_One p,
+.graduations .grad_two p,
+.graduations .grad_three p {
+    margin: 0;
+    font-size: 16px;
+    margin-top: 10px; /* Space between image and text */
+}
+
+
+
+@media screen and (max-width: 1115px){
+    .graduations .grad_One .picturs,
+.graduations .grad_two .picturs,
+.graduations .grad_three .picturs{
+
+    width: 300px;
+    height: 300px;
+    margin-bottom: 5px;
+}
+    
+}
+
+@media screen and (max-width: 970px){
+
+    .graduations .grad_One .picturs,
+.graduations .grad_two .picturs,
+.graduations .grad_three .picturs{
+    width: 250px;
+    height: 250px;
+    margin-bottom: 5px;
+}
+
+
+
+
+}
+@media screen and (max-width: 810px){
+
+    .graduations .grad_One .picturs,
+.graduations .grad_two .picturs,
+.graduations .grad_three .picturs{
+    width: 200px;
+    height: 200px;
+    margin-bottom: 5px;
+}
+
+
+
+
+}
+@media screen and (max-width: 660px){
+
+    .graduations .grad_One .picturs,
+.graduations .grad_two .picturs,
+.graduations .grad_three .picturs{
+    width: 150px;
+    height: 150px;
+    margin-bottom: 5px;
+}
+
+
+
+}
+@media screen and (max-width: 510px){
+
+    .graduations .grad_One .picturs,
+.graduations .grad_two .picturs,
+.graduations .grad_three .picturs{
+    width: 100px;
+    height: 100px;
+    margin-bottom: 5px;
+}
+
+
+}
